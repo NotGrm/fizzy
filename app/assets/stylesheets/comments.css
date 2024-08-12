@@ -1,0 +1,19 @@
+.comment {
+  inline-size: 100%;
+  flex-wrap: wrap;
+  border: 1px solid currentColor;
+  border-radius: 1em;
+  padding: var(--block-space);
+  position: relative;
+
+  &:after {
+    content: "";
+    background: currentColor;
+    block-size: var(--block-space);
+    inline-size: 4px;;
+    margin: auto;
+    position: absolute;
+    inset: auto 50% 0 auto;
+    margin-block-end: calc(var(--block-space) * -1);
+  }
+}
